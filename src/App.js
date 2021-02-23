@@ -23,10 +23,10 @@ class App extends React.Component {
             return robot.name.toLowerCase().includes(this.state.searchfield.toLowerCase());
         });
         return(
-            <div className='tc'>
-            <h1 className='tc'>RoboFriends</h1>
-            <SearchBox searchChange={this.onSearchChange}/>
-                <CardList robots={filteredRobots} />
+            <div className='tc background'>
+                <h1 className='tc'>RoboFriends</h1>
+                <SearchBox searchChange={this.onSearchChange}/>
+                    <CardList robots={filteredRobots} />
             </div>
             
             );

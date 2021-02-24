@@ -1,70 +1,44 @@
-# Getting Started with Create React App
+# What we have here?
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is an item filter made with React and tachyons (and my first project with this tool)
+## Elements
 
-## Available Scripts
+Now i'll enumerate the elements in this project so you can use it and adapt it.
 
-In the project directory, you can run:
+### Folder Components
 
-### `npm start`
+Here's all the components that's in my ReactApp
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+#### Cards.js
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+The first atomic element it's a Card that contain:
+-An image (it's a placeholder generated with https://robohash.org/)
+-A name (taked from https://jsonplaceholder.typicode.com/users)
+-And an email (taked from https://jsonplaceholder.typicode.com/users)
+Also the card have a grow and shadow animation when hovered and clicked
 
-### `npm test`
+#### CardList
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Instatiate and wrap all the "robots" (objects from the jason file provided by https://jsonplaceholder.typicode.com/users) Cards.
 
-### `npm run build`
+#### ErrorBoundry.js
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Catch if exist some error in the functional parts and send a message to avoid the crashing.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+#### Scroll.js
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Wrap an element (in this case the Card List) and make it scrollable, to avoid the general Scroll
 
-### `npm run eject`
+#### SearchBox.js
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Create an input type search to register the filter that the user want.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Folder Container
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+This carpet contain the App.js and its assets
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+#### App.js
 
-## Learn More
+This contain the main aplication with the order of all components and the main processes to them.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# Thanks to visit my robofriends repo!

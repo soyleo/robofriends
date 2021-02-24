@@ -1,5 +1,5 @@
 {
-  "homepage": "https://soyleo.github.io/robofriendsbuild/",
+  "homepage": "https://soyleo.github.io/robofriends",
   "name": "myrobofriends",
   "version": "0.1.0",
   "private": true,
@@ -14,12 +14,12 @@
     "web-vitals": "^1.1.0"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build -r https://$GH_TOKEN@github.com/soyleo/robodriends"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
